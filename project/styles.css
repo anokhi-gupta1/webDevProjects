@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.box1{
+    width: 100%;
+    height: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1_1{
+width: 80%;
+height: 100%;
+/* background-color: chartreuse; */
+display: flex;
+justify-content:flex-end;
+/* align-items:center; */
+background-image: url('image/bg1.png');
+background-position:bottom;
+background-repeat: no-repeat;
+transform:scaleX(-1);
+color: aliceblue;
+
+
+}
+.nav{
+    width: 50%;
+    height: 10%;
+    /* background-color: burlywood; */
+    transform:scaleX(-1);
+    margin:30px;
+ 
+
+}
+.para{
+    transform:scaleX(-1);
+  /* text-align: center; */
+  font-size:28px;
+  font-weight: 600;
+  margin:27px;
+    
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+.box1_2{
+    /* padding: 100px; */
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 70%;
+    position: relative;
+    padding-top: 100px;
+}
+.head1{
+  margin-left: 100px;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.para1{
+    margin: 40px 0 20px 100px;
+    line-height: 25px;
+    font-size: 20px;
+
+}
+.char{
+    display: flex;
+    margin-left: 90px;
+}
+.char>h6{
+    margin: 10px;
+    font-size: medium;
+}
+.arrow{
+    width: 60px;
+  mix-blend-mode: multiply;
+  margin: 0 0 0 20px;
+  height: 30px;
+}
+.arr{
+    width: 150px;
+    height: 80px;
+    background-color: black;
+position: absolute;
+left: 0;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+ }
+ .angle{
+    color: aliceblue;
+    font-size: 30px;
+ }
+ .box2{
+width: 100%;
+height: 40%;
+/* background-color: burlywood; */
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+ .box2_1{
+    width: 55%;
+    /* background-color: rgb(229, 212, 245); */
+    height: 100%;
+ }
+ .bg2{
+    width: 100%;
+    height: 100%;
+ }
+.box2_2{
+    padding: 60px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+h5{
+    font-size: 20px;
+    letter-spacing: 10px;
+
+
+}
+.box2_2>p{
+    font-family: 15px;
+    line-height: 25px;
+    margin-top: 20px;
+   
+   
+} 
+.dropdown {
+    display: none;
+    position: relative;
+  }
+  
+  .dropbtn {
+    /* background-color: chocolate; */
+    color: rgb(30, 28, 28);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  
+
+/* Medium screens (tablets) */
+@media screen and (min-width:750px) and (max-width:1000px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    /* .nav {
+        display: none;
+    } */
+    
+    .dropdown {
+        display: inline-block;
+        transform: scaleX(-1);
+    }
+    
+    .box2, .box1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .arr {
+        left: 0;
+        bottom: 170px;
+    }
+    
+    .para {
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+/* Small screens (mobile) */
+@media screen and (max-width: 750px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .dropdown {
+        display: inline-block;
+    }
+    
+    .box1_2 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .box2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .box2_1, .box2_2, .box2_3 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .arr {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        text-align: center;
+    }
+    
+    .char {
+        justify-content: center;
+    }
+}
+
